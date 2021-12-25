@@ -12,7 +12,7 @@
   <link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
   <!-- <link href="./css/templatemo-style.css" rel="stylesheet"> -->
   <link href="./css/bootstrap.min.css" rel="stylesheet">
-  <link href="./css/font-awesome.min.css" rel="stylesheet">
+
 
 
 
@@ -24,10 +24,7 @@
   <style>
     body {
       padding-top: 0px;
-      background-image: url(img/loi-chuc-nam-moi.gif );
-      /* -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover; */
+      background-image: url(./img/loi-chuc-nam-moi.gif );
       background-size: cover;
       background-clip: border-box;
       height: 100%;
@@ -133,9 +130,9 @@
     </div>
   </div>
 
-
+<!-- 
   <iframe src="./audio/happy_new_year.mp3" allow="autoplay" style="display:none" id="iframeAudio">
-  </iframe>
+  </iframe> -->
 
   <div>
     <audio autoplay loop  id="playAudio">
@@ -156,13 +153,13 @@
       interval: 3500
     });
 
-    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-    if (!isChrome){
-      $('#iframeAudio').remove()
-        }
-     else {
-      $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
-    }
+    // var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+    // if (!isChrome){
+    //   $('#iframeAudio').remove()
+    //     }
+    //  else {
+    //   $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
+    // }
   </script>
 </body>
 
