@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy New Year- CodeGym</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet'
+    type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
+  <!-- <link href="css/templatemo-style.css" rel="stylesheet"> -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+
+
+
+  <link rel="shortcut icon" href="img/icon-codegym.ico" type="image/x-icon" />
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <style>
+    body {
+      padding-top: 0px;
+      background-image: url(img/loi-chuc-nam-moi.gif );
+      /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; */
+      background-size: cover;
+      background-clip: border-box;
+      height: 100%;
+    }
+
+
+    .carousel-indicators {
+      bottom: 15px;
+      left: 10px;
+      width: auto;
+      margin-left: 0;
+    }
+
+    .carousel-indicators li {
+      border-radius: 0;
+      width: 8px;
+      height: 8px;
+      background: #fff;
+    }
+
+    .carousel-indicators .active {
+      width: 10px;
+      height: 10px;
+      background: #3276b1;
+      border-color: #3276b1;
+    }
+
+    #pome {
+      height: 500px;
+      ;
+    }
+    @font-face {
+      font-family: Dancing;
+      src: url("/fonts/DancingScript-VariableFont_wght.ttf");
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+
+  <!-- Slide anh -->
+
+  <div class="container">
+    <div style="margin-top: 5%;">
+      <marquee>
+        <h1 class="text-center">
+          <p class="tm-site-name tm-handwriting-font text-center"
+            style="color: red;font-size: 70px;font-family: 'Dancing';">Happy New Year - CodeGym 2022 - Chúc mừng năm mới - An khang - Thịnh vượng - Vạn sự như ý </p>
+        </h1>
+      </marquee>
+    </div>
+    <div class="row">
+      <div class="col-md-3 " id="poem">
+        <img src="/img/happynewyear.gif" alt="happy_new_year" style="width:100% ;height:400px;">
+      </div>
+      <div class="col-md-9">
+        <!-- <marquee>
+          <h1 class="text-center">
+            <p class="tm-site-name tm-handwriting-font text-center"
+              style="color: red;font-size: 50px;font-family: 'Damion', cursive;">Happy New Year - CodeGym 2022</p>
+          </h1>
+        </marquee> -->
+        <div class="col-md-12 col-md-offset-3" style="margin-left: 10%;">
+          <div id="myCarousel" class="carousel slide">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+              <li data-target="#myCarousel" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner">
+              <figure class="item active"> <img class="thumbnail" src="/img/code_gym_hue_1.jpg" style=" width: 760px;
+            height: 400px;" alt="Slide1">
+              </figure>
+              <figure class="item"> <img class="thumbnail" src="/img/code_gym_hue_2.jpg" alt="Slide2" style=" width: 760px;
+            height: 400px;">
+              </figure>
+              <figure class="item"> <img class="thumbnail" src="/img/code_gym_hue_3.jpg" style=" width: 760px;
+            height: 400px;" alt="Slide3">
+              </figure>
+              <figure class="item"> <img class="thumbnail" src="/img/code_gym_hue_4.jpg" style=" width: 760px;
+            height: 400px;" alt="Slide4">
+              </figure>
+              <figure class="item"> <img class="thumbnail" src="/img/code_gym_hue_5.jpg" style=" width: 760px;
+            height: 400px;" alt="Slide5">
+              </figure>
+              <figure class="item"> <img class="thumbnail" src="/img/code_gym_hue_6.jpg" style=" width: 760px;
+            height: 400px;" alt="Slide6">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div style="display: none;"> -->
+  <div>
+    <audio style="display: none;" controls autoplay loop>
+      <source src="audio/happy_new_year.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <!-- JS -->
+
+  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="js/templatemo-script.js"></script> <!-- Templatemo Script -->
+  <script src="http://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <!-- <script type="text/javascript" src="js/jquery_3.5.5.js"></script>  -->
+  <script>
+    $('#myCarousel').carousel({
+      interval: 3500
+    });
+  </script>
+</body>
+
+</html>
