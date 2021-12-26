@@ -6,16 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Happy New Year- CodeGym</title>
-<!-- 
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet'
-    type='text/css'> -->
+
   <link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
   <!-- <link href="./css/templatemo-style.css" rel="stylesheet"> -->
   <link href="./css/bootstrap.min.css" rel="stylesheet">
-
-
-
-
   <link rel="shortcut icon" href="./img/icon-codegym.ico" type="image/x-icon" />
 
 
@@ -56,44 +50,56 @@
       height: 500px;
       ;
     }
+
     @font-face {
       font-family: Dancing;
       src: url("./fonts/DancingScript-VariableFont_wght.ttf");
+    }
+
+    #wish {
+      position: absolute;
+      top: 350px;
+      left: 50px;
+      border-radius: 10px;
+    }
+
+    #wish:hover {
+      background-color: yellow;
+    }
+    p {
+      font-weight: bold;
     }
   </style>
 
 </head>
 
 <body>
-  <!-- Preloader -->
-  <div id="loader-wrapper">
-    <div id="loader"></div>
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
-  </div>
-
   <!-- Slide anh -->
 
   <div class="container">
-    <div >
+    <div>
       <marquee>
         <h1 class="text-center">
           <p class="tm-site-name tm-handwriting-font text-center"
-            style="color: red;font-size: 70px;font-family: 'Dancing';">Happy New Year - CodeGym 2022 - Chúc mừng năm mới - An khang - Thịnh vượng - Vạn sự như ý </p>
+            style="color: red;font-size: 70px;font-family: 'Dancing';">Happy New Year - CodeGym 2022 - Chúc mừng năm mới
+            - An khang - Thịnh vượng - Vạn sự như ý </p>
         </h1>
       </marquee>
     </div>
     <div class="row">
-      <div class="col-md-3 " id="poem">
-        <img src="./img/happynewyear.gif" alt="happy_new_year" style="width:100% ;height:400px;">
+      <div class="col-md-3 ">
+        <div id="image-wish">
+          <img src="./img/happynewyear.gif" alt="happy_new_year" style="width:100% ;height:400px;">
+          <button id="wish" data-toggle="modal" data-target="#exampleModal" style="font-family: 'Dancing' ; font-size: 20px">
+            Lời chúc !
+          </button>
+        </div>
       </div>
+
+
+
       <div class="col-md-9">
-        <!-- <marquee>
-          <h1 class="text-center">
-            <p class="tm-site-name tm-handwriting-font text-center"
-              style="color: red;font-size: 50px;font-family: 'Damion', cursive;">Happy New Year - CodeGym 2022</p>
-          </h1>
-        </marquee> -->
+
         <div class="col-md-12 col-md-offset-3" style="margin-left: 10%;">
           <div id="myCarousel" class="carousel slide">
             <ol class="carousel-indicators">
@@ -130,36 +136,58 @@
     </div>
   </div>
 
-<!-- 
-  <iframe src="./audio/happy_new_year.mp3" allow="autoplay" style="display:none" id="iframeAudio">
-  </iframe> -->
 
-  <div>
-    <audio autoplay loop  id="playAudio">
-      <source src="./audio/happy_new_year.mp3" type="audio/mpeg">
-    </audio>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="./img/anh-nen-tet.png" width="100%" , height="650px">
+          <div id="codegym" style="position: absolute;top: 15px;left: 35%;">
+            <h3 style="font-family: 'Dancing';"> Happpy New Year-CodeGym !</h3>
+            <p> Tết đến pháo nổ giòn tai</p>
+            <p>Code-gym phát lộc,phát tài,phát xuân</p>
+            <p>Trong ngoài nổi tiếng xa gần</p>
+            <p>Mở thêm nhiều lớp, nâng tầm codegym</p>
+            <p>Dẫn dắt học viên ân cần</p>
+            <p>"Đủ lông đủ mọc cánh" bay gần bay xa</p>
+            <p>Cho dù làm gần làm xa</p>
+            <p>Code gym vẫn ở trong ta-gia đình</p>
+            <p>Xuân chúc mọi việc yên bình</p>
+            <p>Thành công, thắng lợi,chuyển mình tiến lên</p>
+            <p>Chúc cho sức khoẻ của team</p>
+            <p>Dồi dào,mạnh mẽ cười tươi "đưa đò"</p>
+            <p> Chúc cho công việc vô lo</p>
+            <p>"Chạy không có bugs" nhỏ to mỗi ngày</p>
+            <p>Chúc cho vạn sự phát tài</p>
+            <p>Sự nghiệp thăng tiến, trong ngoài an yên</p>
+            <p> Cuối cùng xin chúc cả team</p>
+            <p>Năm sang xuân mới, niềm tin đầy mình</p>
+            <p> Dẫn dắt thế hệ lập trình</p>
+            <p> Đi vào cuộc sống chính mình ước mơ.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <audio autoplay loop>
+    <source src="./audio/happy_new_year.mp3" type="audio/mpeg">
+  </audio>
 
   <!-- JS -->
 
   <script type="text/javascript" src="./js/jquery-1.11.2.min.js"></script>
-  <script type="text/javascript" src="./js/templatemo-script.js"></script> <!-- Templatemo Script -->
+  <!-- <script type="text/javascript" src="./js/templatemo-script.js"></script> -->
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+  <script type="text/javascript" src="js/jquery_3.5.5.js"></script>
 
-  <!-- <script type="text/javascript" src="js/jquery_3.5.5.js"></script>  -->
   <script>
     $('#myCarousel').carousel({
       interval: 3500
-    });
+    })
 
-    // var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-    // if (!isChrome){
-    //   $('#iframeAudio').remove()
-    //     }
-    //  else {
-    //   $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
-    // }
   </script>
 </body>
 
