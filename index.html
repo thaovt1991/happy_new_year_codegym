@@ -65,6 +65,7 @@
     #wish:hover {
       background-color: yellow;
     }
+
     p {
       font-weight: bold;
     }
@@ -89,7 +90,8 @@
       <div class="col-md-3 ">
         <div id="image-wish">
           <img src="./img/happynewyear.gif" alt="happy_new_year" style="width:100% ;height:400px;">
-          <button id="wish" data-toggle="modal" data-target="#exampleModal" style="font-family: 'Dancing' ; font-size: 20px">
+          <button id="wish" data-toggle="modal" data-target="#exampleModal"
+            style="font-family: 'Dancing' ; font-size: 20px">
             Lời chúc !
           </button>
         </div>
@@ -145,24 +147,24 @@
           <div id="codegym" style="position: absolute;top: 15px;left: 35%;">
             <h3 style="font-family: 'Dancing';"> Happpy New Year-CodeGym !</h3>
             <p style="margin-left: 35px ;"> Tết đến pháo nổ giòn tai</p>
-            <p >Code-gym phát lộc,phát tài,phát xuân</p>
-            <p  style="margin-left: 35px ;">Trong ngoài nổi tiếng xa gần</p>
+            <p>Code-gym phát lộc,phát tài,phát xuân</p>
+            <p style="margin-left: 35px ;">Trong ngoài nổi tiếng xa gần</p>
             <p>Mở thêm nhiều lớp, nâng tầm codegym</p>
-            <p  style="margin-left: 35px ;">Dẫn dắt bằng cả trái tim</p>
+            <p style="margin-left: 35px ;">Dẫn dắt bằng cả trái tim</p>
             <p>"Cho chim đủ cánh" bay gần bay xa</p>
-            <p  style="margin-left: 35px ;">Cho dù làm gần làm xa</p>
+            <p style="margin-left: 35px ;">Cho dù làm gần làm xa</p>
             <p>Code gym mãi ở trong ta-gia đình</p>
-            <p  style="margin-left: 35px ;">Xuân chúc mọi việc yên bình</p>
+            <p style="margin-left: 35px ;">Xuân chúc mọi việc yên bình</p>
             <p>Thành công, thắng lợi,chuyển mình tiến lên</p>
-            <p  style="margin-left: 35px ;">Chúc cho sức khoẻ của team</p>
+            <p style="margin-left: 35px ;">Chúc cho sức khoẻ của team</p>
             <p>Dồi dào,mạnh mẽ cười tươi "đưa đò"</p>
-            <p  style="margin-left: 35px ;"> Chúc cho công việc vô lo</p>
+            <p style="margin-left: 35px ;"> Chúc cho công việc vô lo</p>
             <p>"Chạy không có bugs" nhỏ to mỗi ngày</p>
-            <p  style="margin-left: 35px ;">Chúc cho vạn sự phát tài</p>
+            <p style="margin-left: 35px ;">Chúc cho vạn sự phát tài</p>
             <p>Sự nghiệp thăng tiến, trong ngoài an yên</p>
-            <p  style="margin-left: 35px ;"> Cuối cùng xin chúc cả team</p>
+            <p style="margin-left: 35px ;"> Cuối cùng xin chúc cả team</p>
             <p>Năm sang xuân mới, niềm tin đầy mình</p>
-            <p  style="margin-left: 35px ;"> Dẫn dắt thế hệ lập trình</p>
+            <p style="margin-left: 35px ;"> Dẫn dắt thế hệ lập trình</p>
             <p> Đi vào cuộc sống chính mình ước mơ.</p>
           </div>
         </div>
@@ -170,7 +172,7 @@
     </div>
   </div>
 
-  <audio autoplay loop>
+  <audio id="music_hpny" autoplay loop>
     <source src="./audio/happy_new_year.mp3" type="audio/mpeg">
   </audio>
 
@@ -186,7 +188,10 @@
     $('#myCarousel').carousel({
       interval: 3500
     })
-    
+
+    $("#wish").on("click", function () {
+      document.querySelector('audio').play();
+    })
 
   </script>
 </body>
