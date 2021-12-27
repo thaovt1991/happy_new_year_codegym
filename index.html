@@ -69,6 +69,22 @@
     p {
       font-weight: bold;
     }
+
+    .modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1040;
+      width: 100vw;
+      height: 100vh;
+      background-color: #000;
+    }
+    .show {
+      display: block !important;
+    }
+    .modal-backdrop.show {
+      opacity: 0.5;
+    }
   </style>
 
 </head>
@@ -172,10 +188,15 @@
     </div>
   </div>
 
-  <audio id="music_hpny" autoplay loop>
+  <audio id="music" loop>
     <source src="./audio/happy_new_year.mp3" type="audio/mpeg">
   </audio>
 
+  <div id ="backdrop">
+    <div class="modal-backdrop fade show"></div>
+
+  </div>
+ 
   <!-- JS -->
 
   <script type="text/javascript" src="./js/jquery-1.11.2.min.js"></script>
@@ -189,8 +210,14 @@
       interval: 3500
     })
 
-    $("#wish").on("click", function () {
-      document.querySelector('audio').play();
+    var music = document.getElementById('music');
+
+    $(function () {
+      $(".modal-backdrop").on("click", function () {
+        $("#backdrop").remove() ;
+        music.muted = false;
+        music.play();
+      });
     })
 
   </script>
